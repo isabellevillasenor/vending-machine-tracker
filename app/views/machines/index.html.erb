@@ -1,5 +1,7 @@
-<h1><%= @owner.name %> Vending Machines</h1>
+<h1 style="color:#9C7FD1;"><%= @owner.name %> Vending Machines</h1>
 
-<% @owner.machines.each do |machine| %>
-  <p><%= link_to machine.location, machine_path(machine)%></p>
-<% end %>
+<ul style="color:#A5C8E4;">
+  <% @owner.machines.each do |m| %>
+    <li><b><%= link_to m.location.capitalize, machine_path(m), class: 'css_class', style: 'color:#A5C8E4;' %></b></li>
+  <% end %>
+</ul>

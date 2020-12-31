@@ -44,7 +44,7 @@ describe 'Snack Show Page' do
     expect(@m1.snack_count).to eq(1)
 
     expect(page).to have_content(@m2.snack_count)
-    expect(@m1.snack_count).to eq(3)
+    expect(@m2.snack_count).to eq(3)
   end
 
   it 'should have an average price for all snacks each machine has' do
