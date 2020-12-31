@@ -1,1 +1,9 @@
-<h1><%= @machine.location %> Vending Machine</h1>
+<h1 style="color:#9C7FD1;"><%= @machine.location.capitalize %> Vending Machine</h1>
+
+<h3 style="color:#8AA8BF;">Snacks:</h3>
+<ul>
+<% @machine.snacks.each do |s| %>
+  <li style="color:#9FC0DB;"><b><%= s.name %>: </b>
+  $<%= s.price %></li><br/>
+<% end %>
+</ul>
