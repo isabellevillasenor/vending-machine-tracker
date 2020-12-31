@@ -4,4 +4,7 @@ class Machine < ApplicationRecord
   belongs_to :owner
   validates_presence_of :location
 
+  def average_price
+    snacks.average(:price).round(2)
+  end
 end
