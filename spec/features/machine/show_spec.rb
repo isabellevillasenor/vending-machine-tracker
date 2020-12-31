@@ -19,7 +19,13 @@ describe 'Machine Show Page' do
     expect(page).to have_content('Denver Vending Machine')
   end
 
-  it 'should display all associated snack names and price' do
+  it 'should display the average price of all affiliated snacks' do
+    expect(page).to have_content('Average Snack Price: ')
+    expect(page).to have_content(@m1.average_price)
+    expect(@m1.average_price).to eq(0.108e1)
+  end
+
+  it 'should display all affiliated snack names and price' do
     expect(page).to have_content('Snacks:')
     expect(page).to have_content(@takis.name)
     expect(page).to have_content(@takis.price)
