@@ -1,0 +1,14 @@
+<h1 style="color:#9C7FD1;"><%= @snack.name.capitalize %></h1>
+<b><small><p style="color:#9C7FD1;">Price: $<%= @snack.price %></p></small></b><br/>
+
+<h3 style="color:#8AA8BF;">Locations:</h3>
+<ul>
+<% @snack.machines.each do |m| %>
+  <li style="color:#9FC0DB;"><b><%= m.location.capitalize %></b>
+  ( <%= m.snack_count %> kinds of snacks, 
+  average price of $<%= m.average_price %> )
+
+
+</li><br/>
+<% end %>
+</ul>
