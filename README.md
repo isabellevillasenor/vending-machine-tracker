@@ -8,4 +8,4 @@ We're developing an application to track vending machines across the city. This 
 Vending machines may be stocked with different snacks, and the same snack may be available at many different places throughout the city. Before you begin: what does that mean the relationship is between vending machines and snacks? How many snacks does a vending machine have? How many vending machines can a snack be in?
 ​
 ## Isabelle's Graph
-![vend-design](https://ibb.co/HTpJV7x)
+<img src="https://ibb.co/HTpJV7x" alt="vend-design"/>
