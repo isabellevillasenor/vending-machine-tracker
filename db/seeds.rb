@@ -1,5 +1,7 @@
 Owner.destroy_all
 Machine.destroy_all
+Snack.destroy_all
+MachineSnack.destroy_all
 
 o1 = Owner.create!(name: 'Owner 1')
 o2 = Owner.create!(name: 'Owner 2')
@@ -19,3 +21,4 @@ MachineSnack.create!(machine: m1, snack: twix)
 MachineSnack.create!(machine: m2, snack: beuno)
 MachineSnack.create!(machine: m2, snack: stroop)
 MachineSnack.create!(machine: m2, snack: takis)
+MachineSnack.create!(machine: m2, snack: twix)
